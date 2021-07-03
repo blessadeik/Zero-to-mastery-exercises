@@ -1,0 +1,54 @@
+/* Bootstrap style */
+
+/* .col{
+    background-color: bisque;
+    border: 2px solid #810000;
+}
+ */
+
+ body,html{
+    width: 100%;
+    height: 100%;
+    font-family:'Montserrat', sans-serif;
+    background:url(screen.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    padding-top: 11%;
+    padding-bottom: 10%;
+ }
+
+ h1{
+    font-size: 1.57em;
+    color: #f3f4ed;
+    position: relative;
+ }
+
+ .btn{
+     font-weight: 700;
+     border-radius :300px;
+     text-transform: uppercase;
+ }
+
+ .btn-xl{
+     padding:1rem 2rem;
+ }
+
+ .btn-primary{
+    background-color:#f58634;
+    border-color:#f58634;
+ }
+
+ .btn-primary:hover{
+     background-color:#ff7a00;
+     border-color:#ff7a00;
+     border-width: 4px;
+ }
+
+ .buffer{
+    height: 6rem;
+ }

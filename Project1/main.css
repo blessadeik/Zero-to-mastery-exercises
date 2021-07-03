@@ -1,0 +1,31 @@
+/* main css for ZTM project */
+body{
+    margin: 0px;
+}
+
+.container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+h1{
+    font-family: fantasy;
+    font-size: 3rem;
+    border-bottom: 2px solid pink;
+    border-right: 2px solid pink;
+    width: 380px;
+    text-align: center;
+    box-shadow: 0px 3px 3px 0px #810000;
+
+}
+img{
+    width: 450px;
+    height: 300px;
+    margin: 12px;
+    transition: all 1s;
+}
+
+img:hover{
+    transform: scale(1.1);
+}
