@@ -3,7 +3,9 @@ console.log(Number.MAX_SAFE_INTEGER) //9007199254740991
 console.log(Number.MIN_SAFE_INTEGER) ///-9007199254740991
 
 // Exercise 2: why does this throw an error? How can you fix it?
-3 + 4 + 1n /// cannot mix BigInt and other types add n behind each integer
+3 + 4 + 1n /// cannot mix BigInt and other types add n behind each integer 
+                // 3n + 4n + 1n 
+                // 8n
 
 // Exercise 3: Clean up this code using optional chaining
 let will_pokemon = {
@@ -41,7 +43,13 @@ if (andrei_pokemon && andrei_pokemon.raichu && will_pokemon
     }
 
 
-    let action = andrei_pokemon?.raichu?.will_pokemon?.pikachu?.friend?.charizard?? 'fight!' || 'walk away...';
+    // let action = andrei_pokemon?.raichu?.will_pokemon?.pikachu?.friend?.charizard?? 'fight!' || 'walk away...';
+
+    if(andrei_pokemon?.raichu && will_pokemon?.pikachu?.friend?.charizard){
+        console.log('fight!')
+    }else{
+        console.log('walk away...')
+    }
 
 // Exercise 4: What do these each output?
 console.log(false ?? 'hellooo') //false
