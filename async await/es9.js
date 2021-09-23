@@ -21,7 +21,7 @@ Promise.all(urls.map(url => {
 
     const getData = async function(){
         const arrayOfPromises = urls.map(url=> fetch(url));
-        for await ( request of arrayOfPromises) {
+        for await (request of arrayOfPromises) {
             const data = await request.json(); 
             console.log(data);
         }
